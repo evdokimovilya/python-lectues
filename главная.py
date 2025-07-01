@@ -10,7 +10,8 @@ st.page_link("pages/2_Функция Input. Типы данных.py", label="2.
 st.page_link("pages/3_Условные операторы.py", label="3.Условные операторы")
 st.page_link("pages/4_Работа с файлами.py", label="4.Работа с файлами")
 st.page_link("pages/5_Работа с json.py", label="5.Работа с JSON файлами")
-st.page_link("pages/6_Телеграм боты (telebot).py", label="6.Телеграм боты (telebot)")
+st.page_link("pages/6_Функции.py", label="6.Функции")
+st.page_link("pages/7_Телеграм боты (telebot).py", label="7.Телеграм боты (telebot)")
 
 
 
