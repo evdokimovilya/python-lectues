@@ -8,7 +8,7 @@ st.markdown("Выберите лекцию из списка ниже либо �
 
 files = sorted([f for f in os.listdir('pages') if f.endswith(".py")])
 for file in files:
-    st.page_link(f"pages/{file}", label=file.replace('_', '.'))
+    st.page_link(f"pages/{file}", label=file.replace('_', '.')[:-3])
 
 
 
