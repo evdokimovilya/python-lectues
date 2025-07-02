@@ -1,4 +1,6 @@
+import os
 
+template = r"""
 import streamlit as st
 import re
 
@@ -24,8 +26,21 @@ def convert_backticks_to_bold(text):
     return "".join(parts)
 
 # Основной код страницы
-with open(r"content/3_Условные операторы.md", "r", encoding="utf-8") as f:
+with open(r"content/{filename}", "r", encoding="utf-8") as f:
     content = f.read()
     
 rendered = convert_backticks_to_bold(content)
 st.markdown(rendered)
+"""
+
+# Создаем папку pages, если её нет
+os.makedirs("pages", exist_ok=True)
+
+# Генерируем страницы
+for md_file in os.listdir("content"):
+    if md_file.endswith(".md"):
+        output_filename = md_file.replace('.md', '.py')
+        output_content = template.replace('{filename}', md_file)
+        
+        with open(f"pages/{output_filename}", "w", encoding='utf-8') as f:
+            f.write(output_content)
