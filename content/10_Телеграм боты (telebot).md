@@ -10,7 +10,6 @@ https://github.com/eternnoir/pyTelegramBotAPI/tree/master/examples
 
 ## Установка
 
-
 ```bash
 pip install pytelegrambotapi
 ```
