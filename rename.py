@@ -20,8 +20,12 @@ order = ['Переменные',
          'Базы данных. Нормальные формы.',
          'Базы данных. Работа c python.',
          'Базы данных. ORM.',
-         'Yandex API.',
-         'Литература.'
+         'Django. Введение',
+         'Django. Создание приложения',
+         'Django. Работа с базой данных',
+         'Django. Работа с шаблонами',
+         'Yandex API',
+         'Литература'
          ]
 
 
@@ -31,6 +35,7 @@ files = sorted([f for f in os.listdir(VAULT_PATH) if f.endswith(".md")])
 for number, name in enumerate(order, start=1):
     for file in files:
         file_name = re.findall('([А-яA-Za-z()\. ]+)\.md', file)[0]
+        print(name, file_name, name==file_name)
         if name == file_name:
             print(file_name)
             new_name = f'{number}_{name}.md'
