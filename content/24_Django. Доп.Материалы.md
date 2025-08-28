@@ -24,7 +24,7 @@ https://www.chitai-gorod.ru/product/django-3-0-praktika-sozdaniya-veb-saytov-na-
 - Документация - https://www.djangoproject.com/
 - Документация на русском - https://django.fun/docs/django/5.2/
 - туториал 1 - https://tutorial.djangogirls.org/ru/django/
-- туториал 2 - на русском - https://developer.mozilla.org/ru/docs/Learn_web_development/Extensions/Server-side/Django
+- туториал 2 - https://developer.mozilla.org/ru/docs/Learn_web_development/Extensions/Server-side/Django
 
 
 ## Курсы
