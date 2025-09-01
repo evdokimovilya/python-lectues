@@ -23,6 +23,8 @@ order = ['Переменные',
          'Базы данных. Нормальные формы',
          'Базы данных. Работа c python',
          'Базы данных. ORM',
+         'Веб. Клиент-сервер. HTTP',
+         'Веб. GET запрос. Параметры',
          'Django. Введение',
          'Django. Создание приложения',
          'Django. Работа с базой данных',
@@ -38,7 +40,7 @@ VAULT_PATH = "content"
 files = sorted([f for f in os.listdir(VAULT_PATH) if f.endswith(".md")])
 for number, name in enumerate(order, start=1):
     for file in files:
-        file_name = re.findall('([А-яA-Za-z()\. ]+)\.md', file)[0]
+        file_name = re.findall('([А-яA-Za-z()\.\- ]+)\.md', file)[0]
         print(name, file_name, name==file_name)
         if name == file_name:
             print(file_name)
