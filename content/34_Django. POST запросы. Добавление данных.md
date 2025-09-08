@@ -169,9 +169,9 @@ def add_book(request):
 ![фвыа](http://images.na4u.ru/static/django5/18.png)
 # Визуализация
 
-В виде диаграммы 
+[В виде диаграммы](https://excalidraw.com/#json=neCQzBZ1Z1uBuSIDMV2oA,ojNLNMPakz-x7hEVKK9Gmg)
 
-https://excalidraw.com/#json=38m-fDXCjcx1uy8rC69QK,87Q1lFGpmkKYtPdRLzA_ZA
+
 
 Или в виде картинки
 ![фвыа](http://images.na4u.ru/static/django5/19.png)
