@@ -22,7 +22,25 @@
 4. Обязательно в конце метода вернуть исходные данные 
 
 ![фвыа](http://images.na4u.ru/static/django7/1.png)
+```python
+from django import forms 
 
+from .models import Category, Book
+
+class BookForm(forms.Form):
+    title = forms.CharField(max_length=255, label='название книги')
+    author = forms.CharField(max_length=255, label='автор книги')
+    price = forms.IntegerField(label='цена книги')
+    category = forms.ModelChoiceField(label='категория книги', queryset=Category.objects.all())
+
+
+    def clean_title(self):
+        title = self.cleaned_data['title']
+
+        if Book.objects.filter(title=title).exists():
+            raise forms.ValidationError('Такая книга уже есть')
+        return title
+```
 
 Попробуйте добавить книгу, название которой уже есть в базе 
 
