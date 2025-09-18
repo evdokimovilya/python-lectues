@@ -24,7 +24,7 @@ def convert_backticks_to_bold(text):
     return "".join(parts)
 
 # Основной код страницы
-with open(r"content/42_Литература.md", "r", encoding="utf-8") as f:
+with open(r"content/39_Bootstrap.md", "r", encoding="utf-8") as f:
     content = f.read()
     
 rendered = convert_backticks_to_bold(content)
