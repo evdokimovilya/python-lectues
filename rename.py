@@ -8,11 +8,12 @@ order = ['Переменные',
          'Циклы. For. While',
          'Списки',
          'Словари',
+         'Кортежи. Множества',
          'Работа с файлами',
          'Работа с JSON файлами',
          'Функции',
          'Функции. Области видимости',
-         'ООП. Введение',
+         'ООП.Введение',
          'ООП. Связывание классов',
          'ООП. Паттерн MVC',
          'ООП. Абстрактные классы',
@@ -56,7 +57,7 @@ for number, name in enumerate(order, start=1):
         file_name = re.findall('([А-яA-Za-z()\.\- ]+)\.md', file)[0]
         print(name, file_name, name==file_name)
         if name == file_name:
-            print(file_name)
             new_name = f'{number}_{name}.md'
+            print(new_name)
             os.rename(os.path.join(VAULT_PATH, file), os.path.join(VAULT_PATH, new_name))
             break
