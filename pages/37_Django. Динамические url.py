@@ -24,7 +24,7 @@ def convert_backticks_to_bold(text):
     return "".join(parts)
 
 # Основной код страницы
-with open(r"content/27_Веб. Клиент-сервер. HTTP.md", "r", encoding="utf-8") as f:
+with open(r"content/37_Django. Динамические url.md", "r", encoding="utf-8") as f:
     content = f.read()
     
 rendered = convert_backticks_to_bold(content)
